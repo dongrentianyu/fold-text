@@ -1,0 +1,29 @@
+.DS_Store
+node_modules
+output
+public-dist
+$__StoryList.tid
+settings/settings.json
+tiddlers/subwiki/
+
+# ignore some change from plugin that will only change "modified" field
+$__keepstate_*
+# for TiddlyWiki
+dist/
+output/
+tiddlers/**/$__language.tid
+tiddlers/**/$__StoryList.tid
+tiddlers/**/$__StoryList_*.tid
+tiddlers/**/$__palette.tid
+tiddlers/**/$__layout.tid
+tiddlers/**/$__keepstate_*
+tiddlers/**/$__Import.tid
+tiddlers/**/$__UpgradeLibrary
+tiddlers/**/$__UpgradeLibrary_List
+tiddlers/**/$__temp_*
+tiddlers/**/$__view.tid
+tiddlers/**/$__config_Navigation_openLinkFromInsideRiver.tid
+tiddlers/**/$__config_Navigation_openLinkFromOutsideRiver.tid
+# fsrs
+tiddlers/$__Deck_new_study.tid
+tiddlers/$__Deck_default_study.tid
