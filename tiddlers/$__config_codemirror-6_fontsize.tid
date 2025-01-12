@@ -1,0 +1,14 @@
+caption: {{$:/language/codemirror6/fontsize/caption}}
+caption-zh: {{$:/language/codemirror6/zh/fontsize/caption}}
+created: 20250112112122538
+creator: 马不前
+description: {{$:/language/codemirror6/fontsize/description}}
+description-zh: {{$:/language/codemirror6/zh/fontsize/description}}
+id: 15
+modified: 20250112112122750
+modifier: 马不前
+settings-group: general
+settings-template: input
+title: $:/config/codemirror-6/fontsize
+
+24px

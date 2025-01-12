@@ -1,0 +1,14 @@
+caption: {{$:/language/codemirror6/whitespace/caption}}
+caption-zh: {{$:/language/codemirror6/zh/whitespace/caption}}
+created: 20250112112125716
+creator: 马不前
+description: {{$:/language/codemirror6/whitespace/description}}
+description-zh: {{$:/language/codemirror6/zh/whitespace/description}}
+id: 17
+modified: 20250112112125716
+modifier: 马不前
+settings-group: general
+settings-template: input-switch
+title: $:/config/codemirror-6/whitespace
+
+yes

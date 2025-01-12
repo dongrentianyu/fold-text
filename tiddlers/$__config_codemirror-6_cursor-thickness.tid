@@ -1,0 +1,14 @@
+caption: {{$:/language/codemirror6/cursor-thickness/caption}}
+caption-zh: {{$:/language/codemirror6/zh/cursor-thickness/caption}}
+created: 20250112112134537
+creator: 马不前
+description: {{$:/language/codemirror6/cursor-thickness/description}}
+description-zh: {{$:/language/codemirror6/zh/cursor-thickness/description}}
+id: 26
+modified: 20250112112134537
+modifier: 马不前
+settings-group: general
+settings-template: input
+title: $:/config/codemirror-6/cursor-thickness
+
+3px
