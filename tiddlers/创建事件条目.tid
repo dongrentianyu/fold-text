@@ -1,0 +1,16 @@
+created: 20250113112017646
+creator: 马不前
+heading: 2025-01-13
+heading1: 
+modified: 20250113115501673
+modifier: 马不前
+tags: 
+title: 创建事件条目
+
+date: <$edit-text tiddler="$:/state/point-block/event" field="date" size="25" type="date" class="w-90"/>
+
+time_point: <$edit-text tiddler="$:/state/point-block/event" field="time_point" size="25" class="w-90"/>
+
+小时: <$edit-text tiddler="$:/state/point-block/event" field="小时" size="25" class="w-90"/>
+
+分钟: <$edit-text tiddler="$:/state/point-block/event" field="分钟" size="25" class="w-90"/>
