@@ -1,0 +1,37 @@
+created: 20250330143557768
+creator: 马不前
+modified: 20250330163637130
+modifier: 马不前
+tags: fold-text
+title: fold-text-main
+
+\define actions()
+<$action-setfield $tiddler="$:/state/fold-text/main" text=<<event-navigateTo>> />
+\end
+
+
+<$button class="card">
+<$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [!is[system]sort[title]]-[tag[X]] +[after{$:/state/fold-text/main}] }}} />
+
+<$messagecatcher $tm-navigate=<<actions>> >
+
+
+<%if [{$:/state/fold-text/main}compare:number:gteq[1]] %>
+
+  <$transclude tiddler={{{ [[$:/state/fold-text/main]get[text]] }}} mode="block"/>
+
+<%else%>
+
+  恭喜你，你已经读完了所有内容了！！！
+
+<$button>
+<$action-setfield $tiddler="$:/state/fold-text/main" text="1.1.1" />
+回到第一章
+</$button>
+
+
+<%endif%>
+
+</$messagecatcher>
+
+</$button>

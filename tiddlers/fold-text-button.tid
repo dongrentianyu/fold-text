@@ -1,0 +1,15 @@
+created: 20250330141007443
+creator: 马不前
+modified: 20250330163714017
+modifier: 马不前
+tags: fold-text
+title: fold-text-button
+
+<$button>
+<$action-setfield $tiddler="$:/state/x/test" text={{{ [!is[system]sort[title]]-[tag[X]] +[before{$:/state/x/test}] }}} />
+上一章
+</$button>
+<$button>
+<$action-setfield $tiddler="$:/state/x/test" text={{{ [!is[system]sort[title]]-[tag[X]] +[after{$:/state/x/test}] }}} />
+下一章
+</$button>

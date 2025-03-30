@@ -1,0 +1,43 @@
+created: 20250330145054568
+creator: 马不前
+modified: 20250330163520830
+modifier: 马不前
+tags: $:/tags/Stylesheet fold-text
+title: fold-text-style
+
+/* 卡片样式 */
+.card {
+    width: 100%;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* 卡片图标样式 */
+.card-icon {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* 卡片内容样式 */
+.card-content {
+    color: white;
+}
+
+/* 卡片标题样式 */
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* 卡片描述样式 */
+.card-description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+    
