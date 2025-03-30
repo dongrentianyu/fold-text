@@ -1,0 +1,13 @@
+created: 20250330164053759
+creator: 马不前
+modified: 20250330164126711
+modifier: 马不前
+tags: fold-text
+title: fold-text-last
+
+! 恭喜你，你已经读完了所有内容了！！！
+
+<$button>
+<$action-setfield $tiddler="$:/state/fold-text/main" text="1.1.1" />
+回到第一章
+</$button>

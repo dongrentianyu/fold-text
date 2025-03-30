@@ -1,43 +1,28 @@
 created: 20250330145054568
 creator: 马不前
-modified: 20250330163520830
+modified: 20250330165436187
 modifier: 马不前
 tags: $:/tags/Stylesheet fold-text
 title: fold-text-style
 
 /* 卡片样式 */
-.card {
+.flod-text {
     width: 100%;
+    height: 500px;
+    overflow: auto; /* 当内容溢出时显示滚动条 */
+    /* 隐藏滚动条（适用于 WebKit 浏览器，如 Chrome、Safari） */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
     background: black;
     color: white;
     border-radius: 10px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    font-size: 28px;
 }
 
-
-
-/* 卡片图标样式 */
-.card-icon {
-    font-size: 48px;
-    color: white;
-    margin-bottom: 15px;
+/* 隐藏 WebKit 浏览器的滚动条 */
+.flod-text::-webkit-scrollbar {
+    display: none;
 }
-
-/* 卡片内容样式 */
-.card-content {
-    color: white;
-}
-
-/* 卡片标题样式 */
-.card-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* 卡片描述样式 */
-.card-description {
-    font-size: 16px;
-    line-height: 1.6;
-}
-    
+ 
