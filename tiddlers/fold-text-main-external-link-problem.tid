@@ -1,21 +1,27 @@
-created: 20250330143557768
+created: 20250330175110597
 creator: 马不前
-modified: 20250330185329480
+modified: 20250330175214031
 modifier: 马不前
 tags: fold-text
-title: fold-text-main
+title: fold-text-main-external-link-problem
 
+
+```shell
 \define actions()
+<$action-log log="catch tm-navigate" event-navigateTo=<<event-navigateTo>> />
 <$action-setfield $tiddler="$:/state/fold-text/main" text=<<event-navigateTo>> />
 \end
 
 <$messagecatcher $tm-navigate=<<actions>> >
 <$button class="flod-text">
+<$action-log  log="catch tm-navigate" event-navigateTo=<<event-navigateTo>>/>
 <$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [!is[system]sort[title]]-[tag[fold-text]] -[fold-text[no]] +[after{$:/state/fold-text/main}] }}} />
+
+
 
 <div class="flod-text-content" >
 
-<%if [{$:/state/fold-text/main}trim[]!is[blank]] %>
+<%if [{$:/state/fold-text/main}compare:number:gteq[1]] %>
 
 <$transclude tiddler={{{ [[$:/state/fold-text/main]get[text]] }}} mode="block"/>
 
@@ -24,6 +30,11 @@ title: fold-text-main
 <$transclude tiddler="fold-text-last" mode="block"/>
 
 <%endif%>
+
 </div>
+
+
+
 </$button>
 </$messagecatcher>
+```

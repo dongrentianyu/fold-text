@@ -1,13 +1,13 @@
 created: 20250330164053759
 creator: 马不前
-modified: 20250330170043627
+modified: 20250330181517139
 modifier: 马不前
 tags: fold-text
 title: fold-text-last
 
-! 恭喜你，你已经读完了所有内容了！！！
+! 恭喜你，你来到了文本的末尾！！！
 
 <$button>
-<$action-setfield $tiddler="$:/state/fold-text/main" text="1.1.1" />
-回到第一章
+<$action-setfield $tiddler="$:/state/fold-text/main" text={{fold-text-default}} />
+回到开端
 </$button>

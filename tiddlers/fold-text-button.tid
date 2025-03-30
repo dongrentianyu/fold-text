@@ -1,15 +1,25 @@
 created: 20250330141007443
 creator: 马不前
-modified: 20250330163714017
+modified: 20250330185744431
 modifier: 马不前
 tags: fold-text
 title: fold-text-button
 
-<$button>
-<$action-setfield $tiddler="$:/state/x/test" text={{{ [!is[system]sort[title]]-[tag[X]] +[before{$:/state/x/test}] }}} />
-上一章
+<$button tooltip="回到上一节" aria-label="上一节" >
+	<%if [{$:/state/fold-text/main}match{fold-text-default}] %>
+		<$action-sendmessage $message="tm-notify" $param="fold-text-button-notify-left"/>
+	<%elseif [{$:/state/fold-text/main}trim[]is[blank]] %>
+		<$action-setfield $tiddler="$:/state/fold-text/main" text={{fold-text-default}} />
+	<%else%>
+		<$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [!is[system]sort[title]]-[tag[fold-text]] -[fold-text[no]] +[before{$:/state/fold-text/main}] }}} />
+	<%endif%>
+上一节
 </$button>
-<$button>
-<$action-setfield $tiddler="$:/state/x/test" text={{{ [!is[system]sort[title]]-[tag[X]] +[after{$:/state/x/test}] }}} />
-下一章
+<$button tooltip="跳到下一节" aria-label="下一节" >
+	<%if [{$:/state/fold-text/main}compare:number:gteq[1]] %>
+		<$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [!is[system]sort[title]]-[tag[fold-text]] -[fold-text[no]] +[after{$:/state/fold-text/main}] }}} />
+	<%else%>
+		<$action-sendmessage $message="tm-notify" $param="fold-text-button-notify-right"/>
+	<%endif%>
+下一节 
 </$button>

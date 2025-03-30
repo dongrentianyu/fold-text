@@ -1,6 +1,6 @@
 created: 20250330145054568
 creator: 马不前
-modified: 20250330171238238
+modified: 20250330185756390
 modifier: 马不前
 tags: $:/tags/Stylesheet fold-text
 title: fold-text-style
@@ -14,7 +14,7 @@ title: fold-text-style
     flex-wrap: wrap;
     align-content: stretch;
     width: 100%;
-    height: 500px;
+    height: 450px;
     overflow: auto; /* 当内容溢出时显示滚动条 */
     /* 隐藏滚动条（适用于 WebKit 浏览器，如 Chrome、Safari） */
     scrollbar-width: none; /* Firefox */
