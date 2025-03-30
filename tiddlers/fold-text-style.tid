@@ -1,12 +1,18 @@
 created: 20250330145054568
 creator: 马不前
-modified: 20250330165436187
+modified: 20250330171238238
 modifier: 马不前
 tags: $:/tags/Stylesheet fold-text
 title: fold-text-style
 
 /* 卡片样式 */
 .flod-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: stretch;
     width: 100%;
     height: 500px;
     overflow: auto; /* 当内容溢出时显示滚动条 */
@@ -17,12 +23,13 @@ title: fold-text-style
     color: white;
     border-radius: 10px;
     padding: 20px;
-    text-align: left;
-    font-size: 28px;
 }
 
 /* 隐藏 WebKit 浏览器的滚动条 */
 .flod-text::-webkit-scrollbar {
     display: none;
 }
- 
+.flod-text-content{
+    text-align: left;
+    font-size: 28px;
+}
