@@ -1,6 +1,6 @@
 created: 20250330143557768
 creator: 马不前
-modified: 20250330185329480
+modified: 20250330190151538
 modifier: 马不前
 tags: fold-text
 title: fold-text-main
@@ -10,10 +10,10 @@ title: fold-text-main
 \end
 
 <$messagecatcher $tm-navigate=<<actions>> >
-<$button class="flod-text">
+<$button class="fold-text">
 <$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [!is[system]sort[title]]-[tag[fold-text]] -[fold-text[no]] +[after{$:/state/fold-text/main}] }}} />
 
-<div class="flod-text-content" >
+<div class="fold-text-content" >
 
 <%if [{$:/state/fold-text/main}trim[]!is[blank]] %>
 

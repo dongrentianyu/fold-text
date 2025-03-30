@@ -1,12 +1,12 @@
 created: 20250330145054568
 creator: 马不前
-modified: 20250330185756390
+modified: 20250330190525565
 modifier: 马不前
 tags: $:/tags/Stylesheet fold-text
 title: fold-text-style
 
 /* 卡片样式 */
-.flod-text {
+.fold-text {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -26,10 +26,13 @@ title: fold-text-style
 }
 
 /* 隐藏 WebKit 浏览器的滚动条 */
-.flod-text::-webkit-scrollbar {
+.fold-text::-webkit-scrollbar {
     display: none;
 }
-.flod-text-content{
+.fold-text-content{
     text-align: left;
     font-size: 28px;
+}
+.fold-text-button{
+  font-size: 48px;
 }
