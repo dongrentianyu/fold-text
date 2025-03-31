@@ -1,0 +1,10 @@
+class: tc-modal-centered fold-text-modal
+created: 20250330225005055
+creator: 马不前
+mask-closable: yes
+modified: 20250330225529654
+modifier: 马不前
+tags: fold-text
+title: fold-text-save-param
+
+<$transclude tiddler="fold-text-save-content" mode="block"/>

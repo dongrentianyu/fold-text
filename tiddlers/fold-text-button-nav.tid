@@ -1,9 +1,9 @@
 created: 20250330141007443
 creator: 马不前
-modified: 20250330190330911
+modified: 20250330224712554
 modifier: 马不前
 tags: fold-text
-title: fold-text-button
+title: fold-text-button-nav
 
 <$button class="fold-text-button" tooltip="回到上一节" aria-label="上一节" >
 	<%if [{$:/state/fold-text/main}match{fold-text-default}] %>

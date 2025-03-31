@@ -1,0 +1,11 @@
+created: 20250330224551609
+creator: 马不前
+modified: 20250330225450606
+modifier: 马不前
+tags: fold-text
+title: fold-text-button-save
+
+<$button>
+<$action-sendmessage $message="tm-modal" $param="fold-text-save-param"/>
+存档与读档
+</$button>

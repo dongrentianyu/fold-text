@@ -1,6 +1,6 @@
 created: 20250330145054568
 creator: 马不前
-modified: 20250330190525565
+modified: 20250330225221545
 modifier: 马不前
 tags: $:/tags/Stylesheet fold-text
 title: fold-text-style
@@ -35,4 +35,43 @@ title: fold-text-style
 }
 .fold-text-button{
   font-size: 48px;
+}
+
+<!-- 下面是自定义的弹窗样式 -->
+
+.fold-text-modal .tc-modal,
+.fold-text-modal .tc-modal-header,
+.fold-text-modal .tc-modal-body,
+.fold-text-modal .tc-modal-footer {
+  border: none;
+  background-color: #f5f5f5;
+}.fold-text-modal .tc-modal-header {
+	border-radius: 10px 10px 0 0;
+}.fold-text-modal .tc-modal {
+	border-radius: 10px;
+}.fold-text-modal .tc-modal-footer {
+	border-radius: 0 0 10px 10px;
+}@media (max-width: 500px) {
+.fold-text-modal .tc-modal {
+	width: 95% !important;
+}
+}.fold-text-modal .tc-modal-backdrop {
+  cursor: pointer;
+}
+.fold-text-modal .tc-modal {
+    width: 90vw;
+	height: 80vh;
+	top: 50%;
+	bottom: 20%;
+	max-height: 80vh;
+    border-radius: 10px;
+}.fold-text-modal .tc-modal-footer {
+  display: none;
+}
+
+@media (min-width: 55em) {
+.fold-text-modal .tc-modal-body {
+        overflow-y: auto;
+        max-height: 80vh;
+    }
 }

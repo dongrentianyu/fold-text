@@ -1,0 +1,21 @@
+created: 20250330225453919
+creator: 马不前
+modified: 20250331002711827
+modifier: 马不前
+tags: fold-text
+title: fold-text-save-content
+
+<$edit-text tiddler="$:/state/fold-text/save-file" placeholder="无则用当前日期替代" tag=input class="w-75"/>
+<$button class="w-25">
+<$action-createtiddler 
+  $basetitle=<<unusedtitle baseName:"fold-text-save-file" separator:"-">> 
+  tags="fold-text-save-file" 
+  text={{{ [[$:/state/fold-text/save-file]get[text]else<now "YYYY年0MM月0DD日 0hh:0mm">] }}}
+  id={{$:/state/fold-text/main}}>
+<$action-setfield $tiddler="$:/state/fold-text/save-file" text=""/>
+</$action-createtiddler>
+存档
+</$button>
+
+---
+
