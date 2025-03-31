@@ -1,0 +1,13 @@
+caption: mermaid
+created: 20250331010931854
+creator: 马不前
+modified: 20250331010931854
+modifier: 马不前
+tags: $:/tags/TextEditor/Snippet
+title: $:/plugins/mabuqian/gumo-customisation/Snippet/mermaid
+type: text/vnd.tiddlywiki
+
+$$$text/vnd.tiddlywiki.mermaid
+flowchart LR
+
+$$$

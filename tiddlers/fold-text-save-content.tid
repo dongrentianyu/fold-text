@@ -1,12 +1,11 @@
 created: 20250330225453919
 creator: 马不前
-modified: 20250331002711827
+modified: 20250331010753007
 modifier: 马不前
 tags: fold-text
 title: fold-text-save-content
 
-<$edit-text tiddler="$:/state/fold-text/save-file" placeholder="无则用当前日期替代" tag=input class="w-75"/>
-<$button class="w-25">
+<$edit-text tiddler="$:/state/fold-text/save-file" placeholder="无则用当前日期替代" tag=input class="w-75"/><$button style="width:20%; font-size: 20px;"  tooltip="确定存档" aria-label="存档">
 <$action-createtiddler 
   $basetitle=<<unusedtitle baseName:"fold-text-save-file" separator:"-">> 
   tags="fold-text-save-file" 
@@ -14,8 +13,20 @@ title: fold-text-save-content
   id={{$:/state/fold-text/main}}>
 <$action-setfield $tiddler="$:/state/fold-text/save-file" text=""/>
 </$action-createtiddler>
-存档
+存档{{$:/core/images/download-button}}
 </$button>
 
 ---
 
+<div style="column-count: 3; font-size: 24px;">
+<$list filter="[tag[fold-text-save-file]]">
+<$button>
+<$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [<currentTiddler>get[id]] }}}/>
+{{!!text}}
+</$button>
+<$button>
+<$action-deletetiddler $tiddler=<<currentTiddler>> />
+{{$:/core/images/delete-button}}
+</$button>
+</$list>
+</div>

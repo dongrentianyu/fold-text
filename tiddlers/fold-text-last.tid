@@ -1,13 +1,17 @@
 created: 20250330164053759
 creator: 马不前
-modified: 20250330181517139
+modified: 20250331012458181
 modifier: 马不前
 tags: fold-text
 title: fold-text-last
 
-! 恭喜你，你来到了文本的末尾！！！
+<center>
 
-<$button>
+<h1> 恭喜你，你来到了文本的末尾！！！</h1>
+
+<$button  class="fold-text-button" tooltip="回到开端" aria-label="回到开端" >
 <$action-setfield $tiddler="$:/state/fold-text/main" text={{fold-text-default}} />
 回到开端
 </$button>
+{{fold-text-button-save}}
+</center>

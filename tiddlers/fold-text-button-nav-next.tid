@@ -1,0 +1,15 @@
+created: 20250331011533802
+creator: 马不前
+modified: 20250331012044646
+modifier: 马不前
+tags: fold-text
+title: fold-text-button-nav-next
+
+<$button class="fold-text-button" tooltip="跳到下一节" aria-label="下一节" >
+	<%if [{$:/state/fold-text/main}trim[]!is[blank]] %>
+		<$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [!is[system]sort[title]]-[tag[fold-text]] -[fold-text[no]] -[tag[fold-text-save-file]] +[after{$:/state/fold-text/main}] }}} />
+	<%else%>
+		<$action-sendmessage $message="tm-notify" $param="fold-text-button-notify-right"/>
+	<%endif%>
+下一节 
+</$button>

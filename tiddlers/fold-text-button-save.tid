@@ -1,11 +1,11 @@
 created: 20250330224551609
 creator: 马不前
-modified: 20250330225450606
+modified: 20250331010847026
 modifier: 马不前
 tags: fold-text
 title: fold-text-button-save
 
-<$button>
+<$button class="fold-text-button" tooltip="打开存档与读档" aria-label="存档与读档">
 <$action-sendmessage $message="tm-modal" $param="fold-text-save-param"/>
 存档与读档
 </$button>
