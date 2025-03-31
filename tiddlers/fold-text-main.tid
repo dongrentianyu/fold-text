@@ -1,6 +1,6 @@
 created: 20250330143557768
 creator: 马不前
-modified: 20250331014448548
+modified: 20250331021809981
 modifier: 马不前
 tags: fold-text
 title: fold-text-main
@@ -10,20 +10,18 @@ title: fold-text-main
 \end
 
 <$messagecatcher $tm-navigate=<<actions>> >
-<$button class="fold-text fold-text-content-select">
+<%if [[fold-text-button-change]get[button-or-select]match[select]] %>
+<div class="fold-text" >
+
+<$transclude tiddler="fold-text-main-content" mode="block"/>
+
+</div>
+<%else%>
+<$button class="fold-text">
 <$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [!is[system]sort[title]] -[tag[fold-text]] -[fold-text[no]] -[tag[fold-text-save-file]] +[after{$:/state/fold-text/main}] }}} />
 
-<div class="fold-text-content" >
+<$transclude tiddler="fold-text-main-content" mode="block"/>
 
-<%if [{$:/state/fold-text/main}trim[]!is[blank]] %>
-
-<$transclude tiddler={{{ [[$:/state/fold-text/main]get[text]] }}} mode="block"/>
-
-<%else%>
-
-<$transclude tiddler="fold-text-last" mode="block"/>
-
-<%endif%>
-</div>
 </$button>
+<%endif%>
 </$messagecatcher>

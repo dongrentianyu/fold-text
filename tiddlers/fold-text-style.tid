@@ -1,6 +1,6 @@
 created: 20250330145054568
 creator: 马不前
-modified: 20250331014427489
+modified: 20250331020612397
 modifier: 马不前
 tags: $:/tags/Stylesheet fold-text
 title: fold-text-style
@@ -34,6 +34,7 @@ title: fold-text-style
 .fold-text-content{
     text-align: left;
     font-size: 28px;
+    line-height: 1.5em;
 }
 .fold-text-content-select{
     user-select: text;

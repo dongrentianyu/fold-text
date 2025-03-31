@@ -1,11 +1,9 @@
 created: 20250330164053759
 creator: 马不前
-modified: 20250331012458181
+modified: 20250331014843475
 modifier: 马不前
 tags: fold-text
 title: fold-text-last
-
-<center>
 
 <h1> 恭喜你，你来到了文本的末尾！！！</h1>
 
@@ -14,4 +12,3 @@ title: fold-text-last
 回到开端
 </$button>
 {{fold-text-button-save}}
-</center>

@@ -1,11 +1,11 @@
 created: 20250330140742678
 creator: 马不前
-modified: 20250331013846196
+modified: 20250331021911550
 modifier: 马不前
 title: $:/config/EmptyStoryMessage
 type: text/vnd.tiddlywiki
 
-<<vspace height:"50px">>
+<<vspace height:"40px">>
 
 {{fold-text-main}}
 <br/>

@@ -1,0 +1,18 @@
+created: 20250331015546246
+creator: 马不前
+modified: 20250331021726509
+modifier: 马不前
+tags: fold-text
+title: fold-text-main-content
+
+<div class="fold-text-content" >
+<%if [{$:/state/fold-text/main}trim[]!is[blank]] %>
+
+<$transclude tiddler={{{ [[$:/state/fold-text/main]get[text]] }}} mode="block"/>
+
+<%else%>
+
+<$transclude tiddler="fold-text-last" mode="block"/>
+
+<%endif%>
+</div>

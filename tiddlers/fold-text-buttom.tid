@@ -1,12 +1,14 @@
 created: 20250331010907634
 creator: 马不前
-modified: 20250331012324462
+modified: 20250331021429136
 modifier: 马不前
 tags: fold-text
 title: fold-text-buttom
 
 <center>
+{{fold-text-button-change}}
 {{fold-text-button-nav-previous}}
 {{fold-text-button-save}}
 {{fold-text-button-nav-next}}
+{{fold-text-button-edit}}
 </center>
