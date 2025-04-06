@@ -14,7 +14,6 @@ output/
 tiddlers/**/$__language.tid
 tiddlers/**/$__StoryList.tid
 tiddlers/**/$__StoryList_*.tid
-tiddlers/**/$__palette.tid
 tiddlers/**/$__layout.tid
 tiddlers/**/$__keepstate_*
 tiddlers/**/$__Import.tid
@@ -24,6 +23,7 @@ tiddlers/**/$__temp_*
 tiddlers/**/$__view.tid
 tiddlers/**/$__config_Navigation_openLinkFromInsideRiver.tid
 tiddlers/**/$__config_Navigation_openLinkFromOutsideRiver.tid
+# tiddlers/**/$__palette.tid 放出palette，毕竟配色也是应用的一部分
 # fsrs
 tiddlers/$__Deck_new_study.tid
 tiddlers/$__Deck_default_study.tid
