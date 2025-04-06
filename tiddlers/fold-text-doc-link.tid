@@ -1,0 +1,20 @@
+created: 20250406014108248
+creator: 马不前
+modified: 20250406014810008
+modifier: 马不前
+tags: fold-text-doc
+title: fold-text-doc-link
+
+<details class="fold-text-button alert  alert-secondary py-1 my-1">
+  <summary class="fold-text-button">参考</summary>
+  <div class="alert py-0" >
+
+* [[TiddlyWiki|https://tiddlywiki.com/]]
+** [[TiddlyWiki 中文文档|https://bramchen.github.io/tw5-docs/zh-Hans/]]
+** [[TidGi 太记|https://tidgi.fun/#Index:Index]]
+** [[太微中文教程|https://tw-cn.netlify.app/]]
+** [[英文论坛|https://talk.tiddlywiki.org/]]
+** [[太微中文论坛|https://talk.tidgi.fun/]]
+
+  </div>
+</details>

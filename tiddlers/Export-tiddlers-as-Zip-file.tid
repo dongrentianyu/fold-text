@@ -1,0 +1,19 @@
+created: 20250406021952323
+creator: 马不前
+fold-text: no
+modified: 20250406023234216
+modifier: 马不前
+tags: $:/tags/Global
+title: Export-tiddlers-as-Zip-file
+
+\define renderContent(filter,filename)
+  <$action-sendmessage $message="tm-zip-create" $param="$:/state/ZipTiddler"/>
+  <$list filter="$filter$">
+    <$action-sendmessage $message="tm-zip-render-file" $param="$:/state/ZipTiddler" filename={{{ [<currentTiddler>slugify[]addsuffix[.tid]] }}} tiddler=<<currentTiddler>> template="$:/core/templates/tid-tiddler"/>
+  </$list>
+  <$action-sendmessage $message="tm-zip-download" $param="$:/state/ZipTiddler" filename="$filename$.zip"/>
+\end
+
+<$button actions=<<renderContent filter:"[tags[]!is[system]sort[title]]" filename:"tiddlers">>>
+  Export as Zip
+</$button>

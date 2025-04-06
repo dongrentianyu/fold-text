@@ -1,0 +1,11 @@
+created: 20250406023251697
+creator: 马不前
+modified: 20250406024239617
+modifier: 马不前
+tags: fold-text-button
+title: fold-text-button-export-save
+
+<$button class="fold-text-button W-50" style="width:40%;" tooltip="导出存档" aria-label="导出存档"
+actions=<<renderContent filter:"[tag[fold-text-save-file]]" filename:"export-save-tiddlers">>>
+  导出存档
+</$button>

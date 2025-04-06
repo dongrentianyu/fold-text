@@ -1,0 +1,38 @@
+created: 20250406012101805
+creator: 马不前
+modified: 20250406024331307
+modifier: 马不前
+tags: fold-text-doc
+title: fold-text-doc-details
+
+<details class="fold-text-button alert  alert-secondary py-1 my-1">
+  <summary class="fold-text-button">编辑</summary>
+  <div class="alert py-0" >
+
+* 必须的插件
+** `$:/plugins/mabuqian/xnote`
+*** 提供整体的布局和编辑时的右侧边栏
+*** `$:/plugins/mabuqian/xnote/ui/Rightbar`修改了插件条目的控制方式
+** `$:/plugins/linonetwo/in-tagtree-of`
+*** 用来筛选排除`fold-text`下的所有条目，可以递归
+*** 在`fold-text-doc-tree`中可以展开查看
+* 使用的状态条目
+** `$:/state/fold-text/main`，用来控制展示的条目。
+*** 在`fold-text-startup`中实现启动时设置状态条目默认值
+** `$:/state/fold-text/button/edit`，用来控制右侧边栏是否开启，以实现编辑效果
+** `$:/state/fold-text/button/change`，用来控制点击和选择文本两种方式
+* 默认值存储在`fold-text-default`中，一般为1.1.1，可以修改成其他标题。
+* 须要注意的问题
+** 在按钮模式下，呈现的外部链接无法正常跳转
+** 按钮与选择的样式有细微的差异，可以忽略不计
+** 移动端未测试
+** 失效链接无法显示，会直接跳转到最后一节
+* 筛选器排除说明
+** `-[in-tagtree-of[fold-text]] `，排除fold-text下面所有的子条目
+** `-[fold-text[no]] `，排除字段fold-text值为no的
+*** 这是方便一些并不是fold-text的内容，但同时也需要辅助使用时存在
+** `-[tag[fold-text-save-file]]`
+*** 排除存档条目
+
+  </div>
+</details>

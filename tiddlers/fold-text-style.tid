@@ -1,6 +1,6 @@
 created: 20250330145054568
 creator: 马不前
-modified: 20250331020612397
+modified: 20250406013811397
 modifier: 马不前
 tags: $:/tags/Stylesheet fold-text
 title: fold-text-style
@@ -41,6 +41,7 @@ title: fold-text-style
 }
 .fold-text-button{
     font-size: 48px;
+    line-height: 1.25em;
 }
 
 <!-- 下面是自定义的弹窗样式 -->
