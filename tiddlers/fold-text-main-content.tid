@@ -1,22 +1,24 @@
 created: 20250331015546246
 creator: 马不前
-modified: 20250406002012649
+modified: 20250406005004151
 modifier: 马不前
 tags: fold-text
 title: fold-text-main-content
 
 <div class="fold-text-content" >
-<%if [{$:/state/fold-text/main}trim[]!is[blank]] %>
+<%if [[$:/state/fold-text/main]!is[tiddler]] %>
+
+<$transclude tiddler={{{ [[fold-text-default]get[text]] }}} mode="block"/>
+
+<%elseif [{$:/state/fold-text/main}trim[]!is[blank]] %>
 
 <$transclude tiddler={{{ [[$:/state/fold-text/main]get[text]] }}} mode="block"/>
 
-<%elseif [[$:/state/fold-text/main]has[text]] %>
+<%elseif [{$:/state/fold-text/main}trim[]is[blank]] %>
 
 <$transclude tiddler="fold-text-last" mode="block"/>
 
 <%else%>
-
-<$transclude tiddler={{{ [[fold-text-default]get[text]] }}} mode="block"/>
-
+  出现问题
 <%endif%>
 </div>

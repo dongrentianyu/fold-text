@@ -1,6 +1,6 @@
 created: 20250330141007443
 creator: 马不前
-modified: 20250405233824739
+modified: 20250406002621902
 modifier: 马不前
 tags: fold-text-button
 title: fold-text-button-nav-previous
@@ -11,7 +11,7 @@ title: fold-text-button-nav-previous
 	<%elseif [{$:/state/fold-text/main}trim[]is[blank]] %>
 		<$action-setfield $tiddler="$:/state/fold-text/main" text={{fold-text-default}} />
 	<%else%>
-		<$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [!is[system]sort[title]]-[tag[fold-text]] -[fold-text[no]] -[tag[fold-text-save-file]] +[before{$:/state/fold-text/main}] }}} />
+		<$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [!is[system]sort[title]] -[in-tagtree-of[fold-text]] -[fold-text[no]] -[tag[fold-text-save-file]] +[before{$:/state/fold-text/main}] }}} />
 	<%endif%>
 上一节
 </$button>

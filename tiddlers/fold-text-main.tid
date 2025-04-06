@@ -1,6 +1,6 @@
 created: 20250330143557768
 creator: 马不前
-modified: 20250405233532663
+modified: 20250406010044073
 modifier: 马不前
 tags: fold-text
 title: fold-text-main
@@ -18,7 +18,9 @@ title: fold-text-main
 </div>
 <%else%>
 <$button class="fold-text">
+
 <$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [!is[system]sort[title]] -[in-tagtree-of[fold-text]] -[fold-text[no]] -[tag[fold-text-save-file]] +[after{$:/state/fold-text/main}] }}} />
+
 
 <$transclude tiddler="fold-text-main-content" mode="block"/>
 

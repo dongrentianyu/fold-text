@@ -1,0 +1,8 @@
+created: 20250406010058475
+creator: 马不前
+modified: 20250406010248578
+modifier: 马不前
+tags: $:/tags/StartupAction/PostRender fold-text
+title: fold-text-startup
+
+<$action-setfield $tiddler="$:/state/fold-text/main" text={{{ [[fold-text-default]get[text]] }}}  />
