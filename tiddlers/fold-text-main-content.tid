@@ -1,6 +1,6 @@
 created: 20250331015546246
 creator: 马不前
-modified: 20250331021726509
+modified: 20250406002012649
 modifier: 马不前
 tags: fold-text
 title: fold-text-main-content
@@ -10,9 +10,13 @@ title: fold-text-main-content
 
 <$transclude tiddler={{{ [[$:/state/fold-text/main]get[text]] }}} mode="block"/>
 
-<%else%>
+<%elseif [[$:/state/fold-text/main]has[text]] %>
 
 <$transclude tiddler="fold-text-last" mode="block"/>
+
+<%else%>
+
+<$transclude tiddler={{{ [[fold-text-default]get[text]] }}} mode="block"/>
 
 <%endif%>
 </div>
