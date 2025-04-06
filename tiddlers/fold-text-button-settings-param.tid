@@ -2,7 +2,7 @@ class: tc-modal-centered fold-text-modal
 created: 20250405230915618
 creator: 马不前
 mask-closable: yes
-modified: 20250406024440285
+modified: 20250406105748363
 modifier: 马不前
 subtitle: 设置
 tags: fold-text
@@ -10,7 +10,7 @@ title: fold-text-button-settings-param
 
 <center>
 <span class="fold-text-button">点击切换编辑与阅读模式</span>{{fold-text-button-edit}}
-
+<br/>
 {{fold-text-button-export-save}}{{fold-text-button-export-text}}
 </center>
 <span class="fold-text-button">拥有TiddlyWiki使用经验能更好使用本项目！！！</span>
