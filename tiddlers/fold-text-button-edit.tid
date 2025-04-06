@@ -1,18 +1,18 @@
 created: 20250331021349465
 creator: 马不前
-modified: 20250331022329283
+modified: 20250405235140219
 modifier: 马不前
-tags: fold-text
+tags: fold-text-button
 title: fold-text-button-edit
 
-<%if [{$:/config/xnote/rightbar}match[true]] %>
+<%if [{$:/state/fold-text/button/edit}match[true]] %>
 <$button class="fold-text-button" tooltip="开启阅读样式后编辑困难" aria-label="阅读模式">
-<$action-setfield $tiddler="$:/config/xnote/rightbar" text="false"/>
+<$action-setfield $tiddler="$:/state/fold-text/button/edit" text="false"/>
 阅读
 </$button>
 <%else%>
 <$button class="fold-text-button" tooltip="开启编辑模式" aria-label="编辑模式">
-<$action-setfield $tiddler="$:/config/xnote/rightbar" text="true"/>
+<$action-setfield $tiddler="$:/state/fold-text/button/edit" text="true"/>
 编辑
 </$button>
 <%endif%>

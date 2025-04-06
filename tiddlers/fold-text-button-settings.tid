@@ -1,0 +1,11 @@
+created: 20250405230728895
+creator: 马不前
+modified: 20250405231009363
+modifier: 马不前
+tags: fold-text
+title: fold-text-button-settings
+
+<$button class="fold-text-button" tooltip="开启设置界面" aria-label="设置">
+<$action-sendmessage $message="tm-modal" $param="fold-text-button-settings-param"/>
+设置
+</$button>

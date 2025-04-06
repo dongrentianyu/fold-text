@@ -1,0 +1,11 @@
+class: tc-modal-centered fold-text-modal
+created: 20250405230915618
+creator: 马不前
+mask-closable: yes
+modified: 20250405232334746
+modifier: 马不前
+subtitle: 设置
+tags: fold-text
+title: fold-text-button-settings-param
+
+{{fold-text-button-edit}}

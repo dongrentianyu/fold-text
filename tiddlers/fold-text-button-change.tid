@@ -1,19 +1,19 @@
 button-or-select: select
 created: 20250331015124999
 creator: 马不前
-modified: 20250331142100723
+modified: 20250405233701489
 modifier: 马不前
-tags: fold-text
+tags: fold-text-button
 title: fold-text-button-change
 
-<%if [[fold-text-button-change]get[button-or-select]match[select]] %>
+<%if [[$:/state/fold-text/button/change]get[text]match[select]] %>
 <$button class="fold-text-button" tooltip="开启按钮样式后不能选择文本" aria-label="按钮样式">
-<$action-setfield button-or-select="button"/>
+<$action-setfield $tiddler="$:/state/fold-text/button/change" text="button"/>
 按钮
 </$button>
 <%else%>
 <$button class="fold-text-button" tooltip="开启选择样式后不能快速点击下一节" aria-label="选择样式">
-<$action-setfield button-or-select="select"/>
+<$action-setfield $tiddler="$:/state/fold-text/button/change" text="select"/>
 选择
 </$button>
 <%endif%>

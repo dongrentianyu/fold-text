@@ -1,8 +1,8 @@
 created: 20250330141007443
 creator: 马不前
-modified: 20250331011901543
+modified: 20250405233824739
 modifier: 马不前
-tags: fold-text
+tags: fold-text-button
 title: fold-text-button-nav-previous
 
 <$button class="fold-text-button" tooltip="回到上一节" aria-label="上一节" >
